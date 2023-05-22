@@ -42,6 +42,9 @@ nav li {
 	padding-inline: 10px;
 }
 
+nav a:hover {
+	color: inherit;
+}
 nav a {
 	text-decoration: none;
 	color: #000;
@@ -105,12 +108,14 @@ nav a {
 	justify-content: center;
 }
 .nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
-	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000
+}
+.nav-link:hover, .gallery-item:hover{
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -202,6 +207,7 @@ cite {
 
 #contact .container {
 	display: flex;
+
 }
 .picture.right::before {
 	content: ' ';
@@ -213,26 +219,28 @@ cite {
 	right: 0;
 	z-index: -1;
 }
-form, fieldset {
-	flex : 2;
+form{
+	flex: 2;
+}
+fieldset {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 100%;
 	align-items: flex-start;
+	border: none;
 }
 legend {
 	display: block;
 	width: 100%;
 	padding: 0;
-}
-fieldset {
-	border: none;
+	position: relative;
+
 }
 label {
 	display: inline-block;
 }
 form input {
-	width: 100%;
+	width: 70%;
 	background-color: transparent;
 	border: solid 1px;
 	height: 2.5em;
@@ -241,7 +249,7 @@ form input {
 }
 
 form textarea {
-	width: 100% ;
+	width: 70% ;
 	background-color: transparent;
 	border: solid 1px;
 	height: 5em;
@@ -266,11 +274,12 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	.about-me__introduction, #about-me p {
 		width: 100%;
 	}
-	form{
+	fieldset{
 		width: 100%;
+		align-items: center;
 	}
 }
 
