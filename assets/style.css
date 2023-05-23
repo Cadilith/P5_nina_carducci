@@ -164,7 +164,7 @@ blockquote p {
 	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
-	font-size: 2em;
+	font-size: 2.5em;
 
 }
 cite {
@@ -350,7 +350,11 @@ input[type="submit"] {
 		z-index: -1;
 	}
 }
-
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
 @media all and (max-width: 650px) {
 	header {
 		flex-direction: column;
